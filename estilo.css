@@ -1,0 +1,495 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* el logo no se coloca*/
+body{
+    background-color: rgb(185, 185, 185);
+}
+h1{
+    
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+.encabezado,h1{
+    font-size: 30px;
+}
+
+.dosColumnas{
+    display: inline-block;
+    margin-top: 25px;
+}
+.imgArticle{  /*imagenes del index*/
+    width: 90%;
+    border: 10px;
+    padding: 0px;
+    height: auto;
+    image-orientation: center;
+    border-style: ridge;
+    border-radius: 6px;
+    border: #7145e9;
+    text-align: center;
+    
+} 
+
+/*sección article del home*/
+article{
+    background-color: rgb(164, 175, 218);
+    display: grid;
+    border: solid rgb(75, 75, 162);
+    margin: auto;
+   justify-content: center;
+   width: 340px;
+   border-radius: 6px;
+}
+
+/*formacion del carroussel*/
+#formacion{
+    width: 100%;
+    height: 180px;
+    margin-top: 5px;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+     background-color: rgb(207, 113, 162);
+     width:100vw;
+}
+
+.logo{
+    display: none;
+    width: 20vw;
+    height: 20vh;
+    
+}
+.titulo {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding: 10px;
+    color: whitesmoke;
+    width:100%;
+}
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.btn_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 10px;
+    padding: 15PX;
+    width: 40%;
+    border-bottom: 2px solid white;
+}
+
+.btn_menu a{
+    color:rgb(247, 253, 247);
+    text-decoration: none;
+    
+}
+
+.menu {
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    background-color: rgb(108, 8, 118); 
+    margin-bottom: 6px;
+}
+
+ul.navigation {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+}
+.dosColumnas{
+    display: inline-block;
+    margin-top: 25px;
+   
+}
+    /* si tiene tambien la clase show */
+    ul.navigation.show {
+        display: flex;
+    }
+
+ul.navigation li {
+    list-style: none;
+    margin:0px;
+    padding:15px 20px; 
+    border-radius: 10px;
+    border-bottom: 2px solid rgb(184, 184, 184);
+    
+}
+
+ul.navigation li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul.navigation li:hover {
+    background-color: rgb(12, 87, 112);
+    border-radius:10px ; 
+    box-shadow:0 5px 5px 2px rgb(247, 245, 245);
+}
+
+
+#reloj{
+    width: min-content;
+    border: 10px;
+    padding: 0px;
+    height: 0%;
+    image-orientation: center;
+    border-style: ridge;
+    border-radius: 6px;
+    display: flex;
+}
+.digital{
+    font-family: "DS-Digital";
+    background-color: black;
+    color: rgb(193, 230, 32) ; 
+    font-size:30px;
+    text-align: center;
+    width: min-content;
+}
+h2{ 
+    color:rgb(15, 2, 39);
+    padding: 20px;
+    text-shadow: 0.1em 0.1em 0.2em rgb(191, 228, 191);
+    text-align: center;
+    font-size: large;
+
+}
+footer{
+    background-color: rgb(226, 64, 185);
+    text-align: center;
+    color: white;
+   padding: 5px;
+   margin-top: 10px;
+   height: 150px;
+ 
+}
+.footer{
+    background-color: rgb(226, 64, 185);
+    text-align: center;
+    color: white;
+   padding: 5px;
+   margin-top: 10px;
+   height: 330px;
+   
+   
+}
+#icon1{
+    transition: 0.5s all;
+    cursor:pointer;
+    text-decoration-line: none;
+}
+.boton{
+    box-shadow: 10px 10px 30px 15px #000000;
+    text-decoration-line: none;
+    text-decoration: none;
+    text-decoration-style: none
+}
+#icon1:hover{
+    transform: scale(1.3);
+    text-decoration-line: none;
+}
+span{
+    box-shadow:10px 10px 30px 15px #000000;
+   
+}
+@media screen and (min-width: 660px){
+
+    /* en desktop ocultamos siempre el boton del menu */
+    .btn_menu {
+       display: none;
+    }
+   
+    #reloj{
+        margin: 20px;
+    }
+
+   /* cambiamos la direccion del flex */
+    ul.navigation {
+        display: flex;
+        flex-direction: row;
+        
+    }
+     ul.navigation li {
+        border-radius:0px;
+        border-bottom: 0px;
+     }
+    body{
+        padding-top: 200px;
+    }
+    
+   .encabezado,h1{
+        font-size: 45px;
+        margin-right: auto;
+    }
+/*seccion index*/
+.imgArticle{  /*imagenes de formación*/
+    width: 90%;
+    border: 10px;
+    padding: 0px;
+    height: auto;
+    image-orientation: center;
+    border-style: ridge;
+    border-radius: 6px;
+    border: #5b0959;
+} 
+
+/*sección article de formación*/
+article{
+    background-color: rgb(150, 73, 130);
+    display: grid;
+    border: solid rgb(96, 17, 120);
+    margin: 5px;
+   justify-content: center;
+   width: 600px;
+   border-radius: 6px;
+   text-align: center;
+}
+
+
+.dosColumnas{
+    display: flex;
+    margin-top: -10px;
+   
+}
+
+
+    header{
+        flex-direction: column;
+       position: fixed;
+       top: 0
+             
+    }
+    .logo{
+        display: block;
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+    }
+    .indicador{
+    background-color: rgb(33, 7, 104);
+    border-radius:10px ; 
+    box-shadow:0 5px 5px 2px rgb(247, 245, 245);
+    }
+    h2,h3{
+        color:rgb(15, 2, 39);
+        padding: 20px;
+        text-shadow: 0.1em 0.1em 0.2em rgb(191, 228, 191);
+        text-align: center;
+        font-size: x-large;
+    }
+    p{
+        margin: 5px 20px 5px 20px ;
+        color:rgb(16, 15, 15); 
+    }
+ /*fecha*/
+ #fecha{
+    width:max-content;
+    border: 10px;
+    padding: 1px;
+    height: 30%;
+    image-orientation: center;
+    border-style: ridge;
+    border-radius: 6px;
+    margin: 20px;
+    
+}.digitalizado{
+    font-family: "DS-Digital"; 
+    width: min-content;
+    background-color: black;
+    font: size 15px;
+    color: rgb(193, 230, 32) ; 
+    text-align: center;
+ }
+.write{
+    margin-top: 40px;   
+    text-shadow: 0.1em 0.1em 0.2em black;
+    text-align: justify;
+}
+h4{
+    font-size: xx-large;
+  
+}
+.boton{
+    margin-right: 100px;
+}
+.write2{
+    margin-top: 5px;   
+    text-shadow: 0.1em 0.1em 0.2em black;
+    text-align: center;
+}
+  /* oracle del carroussel*/
+  .oracle{
+    width: 100%;
+    height: 450px;
+    margin-top: 10px;
+ }
+ 
+ .codo{
+    width: 100%;
+    height: 350px;
+    margin-top: -50px;
+ }
+.UTEL{
+    width: 100%;
+    height: 450px;
+    margin-top: 10px;
+ }
+ .coursera{
+    width: 100%;
+    height: 350px;
+    margin-top: 5px;
+ }
+ .eddis{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+ }
+ .axon{
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+ }
+ .uba{
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+ }
+.imgformac{
+    margin-bottom: -20px;
+}
+.fasta{
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+ }
+ .habilidades{
+    margin-top: 25px;
+    text-align: center;
+ }
+ .skills{
+    margin-top: 20px;
+ }
+/*boton de whatsapp*/
+#hashLink {
+	display: none;
+}
+#hashLink:target {
+	display: block;
+}
+.float-nav {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999999;
+}
+.float-nav:hover {
+cursor:pointer;
+}
+.float-nav-2 {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+.float-nav-2:hover {
+cursor:pointer;
+}
+.main-nav-2 {
+  font-family: sans-serif;
+  position: absolute;
+  bottom: 7px;
+  right: 0px;
+  width: 120px;
+  margin-bottom:40px;
+}
+.main-nav-2.active {
+  display: block;
+  opacity: 1;
+}
+.main-nav-2 > ul {
+  width: 100%;
+  display: block;
+  list-style: none;
+	z-index:10;
+}
+.main-nav-2 > ul > li {
+    display: flex;
+    justify-content: space-between;
+}
+.main-nav-2 > ul > li > a {
+  text-decoration: none;
+  display: block;
+  font-weight: 200;
+  padding: 18px 80px 18px 18px;
+  color: black;
+}
+.main-nav-2 > ul > li > a:hover {
+  font-weight: 400;
+}
+  .whatsapp{
+    display: inline;
+    margin-top: -250px;
+    border-radius: 15px;
+      margin-left: 650px;
+      float: left;
+      box-shadow: 10px 10px 30px 15px #000000;
+     margin-bottom: 1px;
+  }
+.contacto{
+    display: flex;
+    float: right;
+    margin-right: 650px ;
+    font-size: 4rem;
+    margin-top: 50px;   
+    vertical-align: top;
+}
+
+ .copyright{
+    margin-top: 55px;
+ } 
+ .copyright2{
+    margin-top: 340px;
+ } 
+
+  .animate__animated.animate__lightSpeedOutRight{
+    --animate-duration: 10s;
+  }
+  .animate__animated.animate__lightSpeedOutRight::hover{
+                opacity: 3px;
+  }
+  .mano{
+    display: flex;
+    float: right;
+    margin-right: 650px ;
+  }
+  .contact{
+    display: inline-block; 
+    background-color: rgb(226, 64, 185);
+    height: auto;
+
+  }
+  .span2{
+    text-decoration-line: none;
+    text-decoration: none;
+    text-decoration-style: none;
+  }
+  .iconos1 {
+    text-decoration-line: none;
+    text-decoration: none;
+    text-decoration-style: none
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="icon" href="img/favicon.ico">
+    <script src="Js/menu.js"></script>
+     <script src="Js/tiempo_fecha.js"></script>
+    <title>Mi portafolio</title>
+</head>
+<body>
+    <header>
+        <div class="titulo"> 
+            <div id="reloj"class="digital" >
+                <script >
+                  document.write("Hora:"+ getHours(),"Minutos: "+ getMinutes(),"Segundos: "+ getSeconds());
+                </script>
+            </div>      
+            <img class="logo" src="img/perfil-logo.jpg"> 
+            <div class="encabezado">
+             <h1>Marcela Liliana Maidana</h1>
+                 <div class="btn_menu"><a>menu</a></div>
+            </div> 
+          <div id="fecha" class="digitalizado">
+             <script >
+                document.write(dias_semana[fecha.getDay()] + ', ' + fecha.getDate() + ' de ' + meses[fecha.getMonth()] + ' de ' + fecha.getUTCFullYear());
+             </script>
+          </div> 
+        </div>
+          <nav class="menu">
+             <ul class="navigation">
+                 <li class="indicador"><a href="index.html"><div class="colorear">Sobre mi</div></a></li>              
+                 <li class="link"><a href="formacion.html">Formación</a></li>
+                 <li class="link"><a href="Proyectos.html">Proyectos</a></li>
+                 <li class="link"><a href="Skills.html">Skills</a></li>
+                
+             </ul>
+          </nav>               
+     </header>
+
+   <div class="write">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<footer>
+    <div class="iconos" >
+     <a target="_self" class="boton"  href="https://github.com/Marcela-create"><img src="img/logo-GitHub.png"width="100" height="100" title="Visita mis repositorios"></a>
+     <div class="float-nav">
+      <div id="hashLink">
+          <div class="main-nav-2">
+    <ul>
+      <li>
+        <div class="wa-icons">
+          <a href="https://api.whatsapp.com/send?phone=5492262539414&text=Hola%20,te%20respondo%20por
+                  %20whatsapp%20gestiona%20tu%20consulta%20por%20este%20canal." target="_blank" rel="nofollow noopener noreferrer" title="Contáctame por Whatsapp">
+            <img src="img/whatsapp.png" width="80px" style="padding-right:10px;">
+          </a>
+         </div>
+      </li>
+          <li>
+        <div class="wa-icons">
+          <a href="https://t.me/MarcelaMaidana" target="_blank" rel="nofollow noopener noreferrer" title="Contáctame por Telegram">
+            <img src="img/telegram.png" width="80px" style="padding-right:10px;">
+          </a>
+         </div>
+      </li>
+      <li>
+        <div class="wa-icons">
+          <a href="mailto:marceladeneco@hotmail.com?" subject="enlace HTML" title="Escribeme un Email">
+            <img src="img/email.jpg" width="80px" style="padding-right:10px;"></a>
+          </a>
+         </div>
+      </li>
+    </ul>
+  </div>
+        <a href="#"><img src="img/cerrar.png"width="50px" style="padding-right:10px;" title="Cierra"></a>
+    </div>
+  </div>
+  
+  <a class="float-nav-2" href="#hashLink"><img src="img/desplegar.png"width="50px" style="padding-right:10px;" title="Haz click y contáctame"></a>           
+</div>
+    </div>
+    <p class="copyright">&copy Copyright-derechos reservados -2023 -Developed by Marcela Maidana</p>
+</footer>
+</html>
