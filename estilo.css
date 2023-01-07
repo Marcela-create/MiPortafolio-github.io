@@ -471,6 +471,11 @@ cursor:pointer;
   .animate__animated.animate__lightSpeedOutRight::hover{
                 opacity: 3px;
   }
+  .animate__animated.animate__heartBeat{
+    --animate-duration: 5s;
+        text-align: center;
+        margin-top: 1em;
+  }
   .mano{
     display: flex;
     float: right;
@@ -492,4 +497,15 @@ cursor:pointer;
     text-decoration: none;
     text-decoration-style: none
   }
+  .construcción{
+     text-align: center;
+     margin-left: 25%;
+     margin-top: 1px;
+  }
+  .construcción2{
+       margin-left: 3%;
+  }
+  .construcción3{
+    margin-left: 30%;
+}
 }

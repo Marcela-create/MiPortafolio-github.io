@@ -1,7 +1,7 @@
 "use estrict"
 
 let imagen = document.getElementById("oracle")
-const marcas = ["oracle1", "etapa1", "aluracertificadoformal1","etapa2","aluracertificadoformal2","etapa3","aluracertificadoformal3","1certificadohtmlycss","1certificadoformalhtmlycss","2certificadohtmlCss","2certificadoformalhtmlCss","3certificadohtmlcss","3certificadoformalhtmlcss","4certificadohtmlcss","4certificadoformalhtmlcss","felicitacionesporelchallengeencriptador","insigniachallengeencriptador","blandas1","aluracertificadoformalblandas1","FOCO","aluracertificadoformalfoco","imagesone"]
+const marcas = ["oracle1", "etapa1", "aluracertificadoformal1","etapa2","aluracertificadoformal2","etapa3","aluracertificadoformal3","1certificadohtmlycss","1certificadoformalhtmlycss","2certificadohtmlCss","2certificadoformalhtmlCss","3certificadohtmlcss","3certificadoformalhtmlcss","4certificadohtmlcss","4certificadoformalhtmlcss","felicitacionesporelchallengeencriptador","insigniachallengeencriptador","blandas1","aluracertificadoformalblandas1","FOCO","aluracertificadoformalfoco","diplohabitos","diploformalhabitos","imagesone"]
 let num = 0
 const timer = () =>{
     
