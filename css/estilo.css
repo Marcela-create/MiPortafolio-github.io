@@ -3,12 +3,17 @@
     padding: 0px;
 }
 /* el logo no se coloca*/
+
 body{
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(105, 61, 104);
+}
+body,.home{
+    background-color: rgb(154, 150, 154);
 }
 h1{
-    
+    text-align: center;
     text-shadow: 0.1em 0.1em 0.2em black;
+    margin-left: 15%;
 }
 .encabezado,h1{
     font-size: 30px;
@@ -38,7 +43,7 @@ article{
     border: solid rgb(75, 75, 162);
     margin: auto;
    justify-content: center;
-   width: 340px;
+   width: 100%;
    border-radius: 6px;
 }
 
@@ -53,14 +58,14 @@ article{
 header{
     display: flex;
     flex-direction: column;
-     background-color: rgb(207, 113, 162);
      width:100vw;
+     background: linear-gradient(rgb(159, 91, 218), rgb(207, 113, 162),rgb(92, 9, 109),rgb(53, 10, 119),rgb(43, 9, 198));     
 }
 
 .logo{
-    display: none;
-    width: 20vw;
-    height: 20vh;
+    
+    width: 15vw;
+    height: 15vh;
     
 }
 .titulo {
@@ -82,10 +87,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(108, 8, 118);
     border-radius: 10px;
     padding: 15PX;
-    width: 40%;
+    width: 25%;
     border-bottom: 2px solid white;
 }
 
@@ -143,22 +148,8 @@ ul.navigation li:hover {
 
 
 #reloj{
-    width: min-content;
-    border: 10px;
-    padding: 0px;
-    height: 0%;
-    image-orientation: center;
-    border-style: ridge;
-    border-radius: 6px;
-    display: flex;
-}
-.digital{
-    font-family: "DS-Digital";
-    background-color: black;
-    color: rgb(193, 230, 32) ; 
-    font-size:30px;
-    text-align: center;
-    width: min-content;
+    display: none;
+
 }
 h2{ 
     color:rgb(15, 2, 39);
@@ -169,34 +160,34 @@ h2{
 
 }
 footer{
-    background-color: rgb(226, 64, 185);
+    background: linear-gradient(rgb(92, 9, 109),rgb(159, 91, 218), rgb(207, 113, 162),rgb(207, 113, 162));
     text-align: center;
     color: white;
    padding: 5px;
    margin-top: 10px;
-   height: 150px;
- 
+   
+   
 }
 .footer{
-    background-color: rgb(226, 64, 185);
+    background: linear-gradient(rgb(159, 91, 218), rgb(207, 113, 162),rgb(92, 9, 109),rgb(53, 10, 119),rgb(43, 9, 198));
     text-align: center;
     color: white;
    padding: 5px;
    margin-top: 10px;
-   height: 330px;
-   
-   
 }
+
 #icon1{
     transition: 0.5s all;
     cursor:pointer;
     text-decoration-line: none;
+    
 }
 .boton{
     box-shadow: 10px 10px 30px 15px #000000;
     text-decoration-line: none;
     text-decoration: none;
-    text-decoration-style: none
+    text-decoration-style: none;
+   
 }
 #icon1:hover{
     transform: scale(1.3);
@@ -206,6 +197,42 @@ span{
     box-shadow:10px 10px 30px 15px #000000;
    
 }
+.float-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -4%;
+    right: 6%;
+    text-align: right;
+
+  }
+  .float-nav:hover {
+  cursor:pointer;
+  
+  }
+  .float-nav-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -4%;
+    right: 6%;
+    z-index: 9999;
+   
+    text-align: right;
+  }
+  .iconos1{
+     text-align: left;
+     margin-left: 4%;
+  }
+  .float-nav-2:hover {
+  cursor:pointer;
+  }
+  #hashLink {
+	display: none;
+   
+}
+#hashLink:target {
+	display: block;
+}
+   
 @media screen and (min-width: 660px){
 
     /* en desktop ocultamos siempre el boton del menu */
@@ -213,9 +240,6 @@ span{
        display: none;
     }
    
-    #reloj{
-        margin: 20px;
-    }
 
    /* cambiamos la direccion del flex */
     ul.navigation {
@@ -254,7 +278,7 @@ article{
     border: solid rgb(96, 17, 120);
     margin: 5px;
    justify-content: center;
-   width: 600px;
+   width: 100%;
    border-radius: 6px;
    text-align: center;
 }
@@ -270,8 +294,10 @@ article{
     header{
         flex-direction: column;
        position: fixed;
-       top: 0
-             
+       top: 0            
+    }
+    .cambio{    
+       position: absolute;         
     }
     .logo{
         display: block;
@@ -295,6 +321,28 @@ article{
         margin: 5px 20px 5px 20px ;
         color:rgb(16, 15, 15); 
     }
+/*reloj*/
+#reloj{
+    width: min-content;
+    border: 10px;
+    padding: 0px;
+    height: 0%;
+    image-orientation: center;
+    border-style: ridge;
+    border-radius: 6px;
+    display: flex;
+}
+   #reloj{
+        margin: 20px;
+    }
+.digital{
+    font-family: "DS-Digital";
+    background-color: black;
+    color: rgb(193, 230, 32) ; 
+    font-size:30px;
+    text-align: center;
+    width: min-content;
+}
  /*fecha*/
  #fecha{
     width:max-content;
@@ -305,6 +353,7 @@ article{
     border-style: ridge;
     border-radius: 6px;
     margin: 20px;
+    margin-right: 20%;
     
 }.digitalizado{
     font-family: "DS-Digital"; 
@@ -321,7 +370,7 @@ article{
 }
 h4{
     font-size: xx-large;
-  
+  text-align: center;
 }
 .boton{
     margin-right: 100px;
@@ -334,38 +383,38 @@ h4{
   /* oracle del carroussel*/
   .oracle{
     width: 100%;
-    height: 450px;
+    height: 100%;
     margin-top: 10px;
  }
  
  .codo{
     width: 100%;
-    height: 350px;
+    height: 100%;
     margin-top: -50px;
  }
 .UTEL{
     width: 100%;
-    height: 450px;
+    height: 100%;
     margin-top: 10px;
  }
  .coursera{
     width: 100%;
-    height: 350px;
+    height: 100%;
     margin-top: 5px;
  }
  .eddis{
     width: 100%;
-    height: 300px;
+    height: 100%;
     margin-top: 10px;
  }
  .axon{
     width: 100%;
-    height: 350px;
+    height: 100%;
     margin-top: 10px;
  }
  .uba{
     width: 100%;
-    height: 350px;
+    height: 100%;
     margin-top: 10px;
  }
 .imgformac{
@@ -373,7 +422,7 @@ h4{
 }
 .fasta{
     width: 100%;
-    height: 400px;
+    height: 100%;
     margin-top: 10px;
  }
  .habilidades{
@@ -384,26 +433,28 @@ h4{
     margin-top: 20px;
  }
 /*boton de whatsapp*/
-#hashLink {
-	display: none;
+
+#hashLink:hover{
+    display: none;
 }
 #hashLink:target {
 	display: block;
 }
 .float-nav {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+  position: relative;
+  bottom: 15%;
+  right: 25%;
   z-index: 9999999;
+  margin-top: 55px;
 }
 .float-nav:hover {
 cursor:pointer;
 }
 .float-nav-2 {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
+  position:relative; 
+  right: 25%;
+  z-index: 9;
+  
 }
 .float-nav-2:hover {
 cursor:pointer;
@@ -411,20 +462,21 @@ cursor:pointer;
 .main-nav-2 {
   font-family: sans-serif;
   position: absolute;
-  bottom: 7px;
+  bottom: 4px;
   right: 0px;
   width: 120px;
-  margin-bottom:40px;
+  margin-bottom:100px;
 }
 .main-nav-2.active {
   display: block;
-  opacity: 1;
+  opacity: 1000;
 }
 .main-nav-2 > ul {
   width: 100%;
   display: block;
   list-style: none;
-	z-index:10;
+  z-index:10;
+  margin-top: 55px;
 }
 .main-nav-2 > ul > li {
     display: flex;
@@ -451,16 +503,25 @@ cursor:pointer;
   }
 .contacto{
     display: flex;
-    float: right;
+    
     margin-right: 650px ;
     font-size: 4rem;
-    margin-top: 50px;   
     vertical-align: top;
+    
+}
+footer,.contact{
+    width: 100%;
+    height: 20%;
+}
+.cerrar{
+    margin-top: 55px;
+}
+#hashLink,.abrir:hover{
+  
+    background: linear-gradient(rgb(159, 91, 218), rgb(207, 113, 162),rgb(207, 113, 162));
+  
 }
 
- .copyright{
-    margin-top: 55px;
- } 
  .copyright2{
     margin-top: 340px;
  } 
@@ -478,25 +539,35 @@ cursor:pointer;
   }
   .mano{
     display: flex;
-    float: right;
+    float: left;
     margin-right: 650px ;
   }
   .contact{
     display: inline-block; 
-    background-color: rgb(226, 64, 185);
-    height: auto;
-
+   
+    height:3%;
+    background: linear-gradient(rgb(92, 9, 109),rgb(159, 91, 218), rgb(207, 113, 162),rgb(207, 113, 162));
+  }
+  .contacto{
+    margin-top: 1%;
+    margin-left: 2%;
+  
   }
   .span2{
     text-decoration-line: none;
     text-decoration: none;
     text-decoration-style: none;
+    
   }
   .iconos1 {
     text-decoration-line: none;
     text-decoration: none;
     text-decoration-style: none
   }
+  .iconos1{
+    text-align: center;
+    
+ }
   .construcción{
      text-align: center;
      margin-left: 25%;
@@ -508,4 +579,5 @@ cursor:pointer;
   .construcción3{
     margin-left: 30%;
 }
+
 }

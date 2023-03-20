@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <link rel="icon" type="icon" href="img/favicon.ico">
     <script src="Js/menu.js"></script>
      <script src="Js/tiempo_fecha.js"></script>
     <title>Mi portafolio</title>
 </head>
-<body>
+<body class="home">
     <header>
         <div class="titulo"> 
             <div id="reloj"class="digital" >
@@ -31,31 +31,30 @@
         </div>
           <nav class="menu">
              <ul class="navigation">
-                 <li class="indicador"><a href="index.html"><div class="colorear">Sobre mi</div></a></li>              
-                 <li class="link"><a href="formacion.html">Formación</a></li>
-                 <li class="link"><a href="Proyectos.html">Proyectos</a></li>
-                 <li class="link"><a href="Skills.html">Skills</a></li>
+                 <li class="indicador"><a href="index.html"><div class="colorear">Sobre mi</div></a></li>  
+                 <li class="link"><a href="skills.html">Skills</a></li>                        
+                 <li class="link"><a href="Proyectos.html">Proyectos</a></li>   
+                 <li class="link"><a href="formacionConFlip.html">Formación </a></li>     
+            
                
              </ul>
           </nav>               
      </header>
 
    <div class="write">
-     <script> 
+    <!--- <script> 
           var nombre = prompt('¿Cómo te llamas? ');
           document.write("<h4>¡¡Hola,"+ nombre+"!! <br> Gracias por interesarte en mi perfil</h4>"); 
-      </script>
-     <h2> Soy Marcela Maidana developer full-Stack Python,(aunque me siento más cómoda por el momento en el Front-end);
-        estudiante de licenciatura en Pedagogia con área de concentración: Recursos humanos(Mediación y gestión de conflictos,
-        Capacitación y desarrollo , Organización del capital humano) en la universidad UTEL en colaboración con Unicef (egreso agosto 2023) . <br> 
-        Actualmente estoy participando en la formación (para mejorar mi Back-end) que imparte Oracle ONE y Alura Latam ademas de realizar el Trayecto: Diplomatura en Ciencia de Datos e Inteligencia Artificial de Argentina Programa 4.0 – UNSAM(Universidad Nacional de San Martín)
-        previo a mi certificación de Agencia de Aprendizaje a lo largo de la vida, codo a codo Python 4.0;
-        soy coach especialista en coachinng educacional y finalizando la carrera de coaching ontológico profesional</h2>
+      </script>--->
+      <h4>Mi nombre es Marcela Maidana y construyo páginas web</h4>
+     <h2> Soy developer full-Stack Python (Agencia de Aprendizaje a lo largo de la vida, codo a codo Python 4.0).Actualmente estoy participando del proyecto Oracle ONE en Alura Latam y en la formación (para mejorar mi Front-end), realizando challenges.
+       Además de realizar el Trayecto: Diplomatura en Ciencia de Datos e Inteligencia Artificial de Argentina Programa 4.0 – UNSAM(Universidad Nacional de San Martín);
+       Estudiante de licenciatura en Pedagogia con área de concentración: Recursos humanos(Mediación y gestión de conflictos,Capacitación y desarrollo , Organización del capital humano) en la universidad UTEL en colaboración con Unicef (egresando 2023)<br>Tambnién soy:coach ontológico profesional y especialista en coachinng educacional </h2>
    </div>
 </body> 
    <footer>
     <div class="iconos1" >
-     <a  href="CV-Marcela-Liliana-Maidana-último.pdf" class="boton icon-descarga" id="icon1" download="SLee Dw"><img src="img/cv-logo-tp-circle-word-symbol-trademark-text-transparent-png-347200.png"width="100" height="100" title="Descargar CV"></a>    
+     <a  href="CV-Marcela_Liliana-Maidana-marzo2023 (4).pdf" class="boton icon-descarga" id="icon1" download="SLee Dw"><img src="img/cv-logo-tp-circle-word-symbol-trademark-text-transparent-png-347200.png"width="100" height="100" title="Descargar CV"></a>    
      <a target="_Self" class="boton" id="icon2" href="https://www.linkedin.com/in/marcela-liliana-maidana-83370b92/"><img src="img/Linkedin-PNG-Pic-Background.png"width="200" height="50" title="Ir a mi Linkedin" ></a>
      </a>
     </div>
@@ -67,31 +66,31 @@
         <div class="wa-icons">
           <a href="https://api.whatsapp.com/send?phone=5492262539414&text=Hola%20,te%20respondo%20por
                   %20whatsapp%20gestiona%20tu%20consulta%20por%20este%20canal." target="_blank" rel="nofollow noopener noreferrer" title="contáctame por whatsapp">
-            <img src="img/whatsapp.png" width="80px" style="padding-right:10px;">
+            <img src="img/whatsapp.png" width="80px" style="padding: right 40px;">
           </a>
          </div>
       </li>
           <li>
         <div class="wa-icons">
           <a href="https://t.me/MarcelaMaidana" target="_blank" rel="nofollow noopener noreferrer" title="Contáctame por Telegram">
-            <img src="img/telegram.png" width="80px" style="padding-right:10px;">
+            <img src="img/telegram.png" width="80px" style="padding: right 40px;">
           </a>
          </div>
       </li>
   <li>
         <div class="wa-icons">
           <a href="mailto:marceladeneco@hotmail.com?" subject="enlace HTML" title="Escribeme un Email">
-            <img src="img/email.jpg" width="80px" style="padding-right:10px;"></a>
+            <img src="img/email.jpg" width="80px" style="padding: right 40px;"></a>
           </a>
          </div>
       </li>
     </ul>
   </div>
-        <a href="#"><img src="img/cerrar.png"width="50px" style="padding-right:10px;" title="Cierra"></a>
+        <a href="#" class="cerrar"><img src="img/cerrar.png"width=110px" style="padding: right 40px;" title="Cierra"></a>
     </div>
   </div>
   
-  <a class="float-nav-2" href="#hashLink"><img src="img/desplegar.png"width="50px" style="padding-right:10px;" title="Haz click y contáctame"></a>           
+  <a class="float-nav-2" href="#hashLink"><img src="img/desplegar2b.jpg"width="90px" style="padding-right:10px;" title="Haz click y contáctame" class="abrir"></a>           
 </div>
 <p class="copyright">&copy Copyright-derechos reservados -2023 -Developed by Marcela Maidana</p>
     </footer>
